@@ -1,0 +1,241 @@
+CUSTOMER SENTIMENT ANALYSIS
+BUSINESS INSIGHTS
+
+1. OVERALL CUSTOMER SENTIMENT
+
+The dataset contains 25,000 customer reviews.
+
+Positive reviews: 9,978 (39.91%)
+Negative reviews: 9,937 (39.75%)
+Neutral reviews: 5,085 (20.34%)
+
+The distribution shows that positive and negative reviews are present in nearly equal proportions, while neutral reviews represent a smaller share of the dataset.
+
+Business Interpretation:
+Customer feedback is broadly mixed, indicating that both positive customer experiences and areas of dissatisfaction are represented in the dataset.
+
+
+2. CUSTOMER RATING ANALYSIS
+
+Average customer rating: 3.00 out of 5.
+
+Rating distribution:
+
+1 Star: 4,891 reviews
+2 Stars: 5,046 reviews
+3 Stars: 5,085 reviews
+4 Stars: 5,066 reviews
+5 Stars: 4,912 reviews
+
+Business Interpretation:
+The average rating of 3.00 indicates a balanced rating distribution in this dataset.
+
+
+3. PRODUCT CATEGORY ANALYSIS
+
+Negative-review rates by category:
+
+Home & Kitchen: 41.60%
+Fashion: 41.27%
+Beauty: 41.04%
+Books: 40.58%
+Automobile: 39.75%
+Electronics: 38.94%
+Groceries: 38.77%
+Sports: 37.97%
+Travel: 37.92%
+
+Business Interpretation:
+Home & Kitchen has the highest observed negative-review rate at 41.60%, while Travel has the lowest at 37.92%.
+
+The differences are relatively small, so these results should be treated as descriptive patterns rather than evidence of major performance differences between categories.
+
+
+4. PLATFORM ANALYSIS
+
+The negative-review rates vary across platforms.
+
+Examples:
+
+Flipkart: 42.96%
+Snapdeal: 41.58%
+Croma: 41.55%
+Shopclues: 41.48%
+BigBasket: 41.46%
+
+Flipkart has the highest observed negative-review rate in the dataset at 42.96%.
+
+Business Interpretation:
+Platform-level sentiment varies across the dataset. These differences can be used to identify platforms that may require further investigation into customer experience, service quality, delivery, or product-related issues.
+
+These results are descriptive and do not establish that the platform itself caused the sentiment.
+
+
+5. REGIONAL ANALYSIS
+
+Negative-review rates by region:
+
+West: 41.35%
+East: 40.07%
+North: 39.53%
+South: 39.35%
+Central: 38.39%
+
+The West region has the highest observed negative-review rate at 41.35%.
+
+Business Interpretation:
+Regional sentiment varies across the dataset. Regional differences can be further investigated to understand whether customer experience, product mix, service levels, or other operational factors may be contributing to the observed patterns.
+
+
+6. COMPLAINT ANALYSIS
+
+Complaint registration:
+
+Complaints registered: 9,937
+No complaints registered: 15,063
+
+In the dataset:
+
+Complaint registered = Negative sentiment: 9,937
+Complaint not registered = Neutral or Positive sentiment: 15,063
+
+Business Interpretation:
+Complaint registration is perfectly aligned with negative sentiment in this dataset.
+
+Important Note:
+This is a characteristic of the dataset and should not be interpreted as evidence that registering a complaint causes negative sentiment.
+
+
+7. ISSUE RESOLUTION ANALYSIS
+
+Resolved issues: 16,593
+Unresolved issues: 8,407
+
+Issue resolution rate: 66.37%
+
+Sentiment distribution:
+
+Resolved:
+Negative: 39.90%
+Neutral: 20.38%
+Positive: 39.73%
+
+Unresolved:
+Negative: 39.46%
+Neutral: 20.27%
+Positive: 40.28%
+
+Business Interpretation:
+The sentiment distributions for resolved and unresolved issues are very similar.
+
+Therefore, this dataset does not provide strong evidence that issue resolution itself changes customer sentiment.
+
+
+8. RESPONSE TIME ANALYSIS
+
+Average response time by issue resolution:
+
+Resolved issues: 24.03 hours
+Unresolved issues: 59.70 hours
+
+Overall average response time: approximately 36 hours.
+
+Business Interpretation:
+Unresolved issues have a substantially higher average response time than resolved issues.
+
+This difference may be useful for operational investigation and customer-service process analysis.
+
+Important Note:
+The analysis identifies an association between resolution status and response time. It does not establish a causal relationship.
+
+
+9. RESPONSE TIME BY SENTIMENT
+
+Average response time:
+
+Negative sentiment: 36.02 hours
+Neutral sentiment: 36.09 hours
+Positive sentiment: 35.99 hours
+
+Business Interpretation:
+Average response times are almost identical across the three sentiment groups.
+
+Therefore, sentiment alone does not appear to distinguish response time in this dataset.
+
+
+10. VADER SENTIMENT ANALYSIS
+
+VADER sentiment analysis was applied to the customer review text.
+
+Agreement between the existing sentiment labels and VADER-generated sentiment:
+
+79.64%
+
+Number of disagreements:
+
+5,089 reviews
+
+Business Interpretation:
+VADER agrees with the existing sentiment label for approximately 79.64% of reviews.
+
+The disagreements show that rule-based sentiment analysis can interpret certain customer statements differently from the existing dataset labels.
+
+Examples include:
+
+- "product is okay, nothing special."
+- "customer service was unhelpful."
+- "works fine but could be better."
+- "delivery was fine, product is decent."
+
+
+11. KEY BUSINESS TAKEAWAYS
+
+1. Customer sentiment is broadly mixed, with positive and negative reviews representing approximately 40% each.
+
+2. Home & Kitchen has the highest observed negative-review rate among the product categories at 41.60%.
+
+3. Flipkart has the highest observed negative-review rate among the listed platforms at 42.96%.
+
+4. The West region has the highest observed negative-review rate at 41.35%.
+
+5. The overall issue resolution rate is 66.37%.
+
+6. Unresolved issues have a considerably higher average response time (59.70 hours) than resolved issues (24.03 hours).
+
+7. Response time is nearly identical across positive, negative, and neutral sentiment groups.
+
+8. VADER sentiment agrees with the existing sentiment labels for 79.64% of reviews.
+
+9. Several relationships in the dataset are structurally aligned, so causal conclusions should not be drawn from them.
+
+
+12. RECOMMENDED AREAS FOR FURTHER ANALYSIS
+
+The following areas could be explored in future versions of the project:
+
+- Analyze review text using advanced NLP techniques.
+- Identify common customer pain points using topic modeling.
+- Perform aspect-based sentiment analysis.
+- Investigate reasons behind unresolved issues.
+- Analyze response time by platform and category.
+- Analyze customer sentiment by age group and gender.
+- Build a machine-learning model for sentiment prediction.
+- Compare multiple sentiment-analysis algorithms.
+- Develop real-time sentiment monitoring.
+- Connect the dashboard to regularly updated data.
+
+
+13. IMPORTANT DATA LIMITATIONS
+
+The dataset contains several structured relationships.
+
+For example:
+
+- Ratings 1 and 2 are aligned with negative sentiment.
+- Rating 3 is aligned with neutral sentiment.
+- Ratings 4 and 5 are aligned with positive sentiment.
+- Complaint registration is perfectly aligned with negative sentiment.
+
+Therefore, these relationships should not be presented as newly discovered causal business findings.
+
+The analysis should primarily be used to demonstrate data-analysis techniques, descriptive insights, visualization, and business-question solving.
